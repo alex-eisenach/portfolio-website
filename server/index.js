@@ -61,7 +61,7 @@ app.get('/api/certifications', (req, res) => {
     },
     {
       id: 2,
-      name: 'Certified Professional: Generative AI LLMs',
+      name: 'Certified Professional & Associate: Generative AI LLMs',
       issuer: 'NVIDIA',
       date: '2025',
       image: '/certifications/prof_genai.png',

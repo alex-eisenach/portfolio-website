@@ -5,11 +5,11 @@ import { Code, Database, Cpu, Layout, Terminal, Github, Brain, BookType } from '
 const About = () => {
     const skills = [
         { name: 'Languages', icon: <BookType />, list: ['Python', 'C/C++', 'Javascript', 'MATLAB', 'Java'] },
-        { name: 'Frontend', icon: <Layout />, list: ['React.js', 'Holoviz Panel', 'QT', 'Tailwind CSS', 'Material UI', 'Observable Plot'] },
-        { name: 'Backend', icon: <Terminal />, list: ['Node.js', 'Express.js', 'SQL', 'MongoDB', 'Python'] },
-        { name: 'Data', icon: <Database />, list: ['JMP', 'NumPy', 'Pandas', 'Polars', 'RAPIDS', 'Spark'] },
-        { name: 'AI/ML', icon: <Brain />, list: ['RAG', 'StableDiffusion', 'Llama', 'PyTorch', 'TensorFlow', 'HuggingFace'] },
-        { name: 'DevOps', icon: <Cpu />, list: ['Git', 'GitHub Actions', 'Docker', 'Argo CD', 'K3s', 'NGINX'] },
+        { name: 'Frontend', icon: <Layout />, list: ['React.js', 'Holoviz Panel', 'QT', 'Material UI', 'Observable Plot'] },
+        { name: 'Backend', icon: <Terminal />, list: ['Node.js', 'Express.js', 'MSSQL', 'PostgreSQL', 'MongoDB', 'NGINX'] },
+        { name: 'Data', icon: <Database />, list: ['JMP', 'Spark', 'NumPy', 'Pandas', 'Polars', 'RAPIDS'] },
+        { name: 'AI/ML', icon: <Brain />, list: ['RAG', 'Stable Diffusion', 'Llama', 'PyTorch', 'TensorFlow', 'HuggingFace'] },
+        { name: 'DevOps', icon: <Cpu />, list: ['Git', 'GitHub Actions', 'Docker', 'Argo CD', 'K3s'] },
     ];
 
     return (
@@ -45,7 +45,7 @@ const About = () => {
                                 <span className="text-xs text-text-muted uppercase tracking-wider">Aerospace Engineering</span>
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-3xl font-bold text-secondary">3+</span>
+                                <span className="text-3xl font-bold text-secondary">4</span>
                                 <span className="text-xs text-text-muted uppercase tracking-wider">Certifications</span>
                             </div>
                         </div>

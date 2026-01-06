@@ -42,15 +42,18 @@ const Hero = () => {
                             transition={{ duration: 0.8, delay: 0.2 }}
                             className="relative shrink-0"
                         >
-                            <div className="relative w-64 md:w-96 lg:w-112"> {/* Significantly Larger (Double previous target) */}
+                            <div className="relative w-64 md:w-96 lg:w-112">
                                 {/* Ambient glow behind image */}
                                 <div className="absolute inset-0 bg-primary/20 blur-[60px] rounded-full scale-75" />
-                                <div className="relative mask-edge-fade overflow-hidden">
-                                    <img
-                                        src="/profile.png"
-                                        alt="Alex Eisenach"
-                                        className="w-full transition-transform duration-700 hover:scale-105"
-                                    />
+                                <div className="hexagon-container">
+                                    <div className="hexagon-border" />
+                                    <div className="hexagon-content">
+                                        <img
+                                            src="/profile.png"
+                                            alt="Alex Eisenach"
+                                            className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </motion.div>

@@ -5,9 +5,9 @@
   --primary-rgb: 233, 99, 83;
   --secondary: #5995A4;
   --secondary-rgb: 89, 149, 164;
-  --accent: #ea4b36;
+  --accent: #e26757;
   --accent-rgb: 252, 176, 128;
-  --bg-darker: #1D437E;
+  --bg-darker: #072146;
   --bg-dark: #d5fc8035;
   --text-main: #df5d4c;
   --text-muted: #f8fafc;
@@ -268,6 +268,30 @@ section::after {
 .mask-edge-fade {
   mask-image: radial-gradient(circle at center, black 40%, transparent 77%);
   -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 77%);
+}
+
+.hexagon-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 0.866 / 1;
+}
+
+.hexagon-border {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon-content {
+  position: absolute;
+  inset: 6px;
+  background: var(--bg-darker);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Common Components */
