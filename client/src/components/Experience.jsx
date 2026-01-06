@@ -24,7 +24,7 @@ const Experience = () => {
     if (loading) return null;
 
     return (
-        <section id="experience" className="bg-bg-darker">
+        <section id="experience">
             <div className="container">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4 font-heading">Professional Experience</h2>

@@ -35,7 +35,7 @@ const Projects = () => {
     if (loading) return <div className="text-center py-20">Loading Projects...</div>;
 
     return (
-        <section id="projects">
+        <section id="projects" className="bg-bg-dark">
             <div className="container">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4 font-heading">Independent Projects</h2>
@@ -67,7 +67,7 @@ const Projects = () => {
                                 </p>
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {project.technologies.map(tech => (
-                                        <span key={tech} className="px-4 py-1.5 bg-white/5 rounded-full text-[10px] font-semibold tracking-wider uppercase text-secondary border border-primary/10 whitespace-nowrap">
+                                        <span key={tech} className="px-4 py-1.5 bg-white/5 rounded-full text-[10px] font-semibold tracking-wider uppercase text-sharp border border-primary/10 whitespace-nowrap">
                                             {tech}
                                         </span>
                                     ))}

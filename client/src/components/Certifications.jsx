@@ -22,7 +22,7 @@ const Certifications = () => {
     }, []);
 
     return (
-        <section id="certifications" className="bg-bg-dark relative overflow-hidden">
+        <section id="certifications" className="relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-[100px]" />
 
             <div className="container relative z-10">
@@ -60,7 +60,7 @@ const Certifications = () => {
                                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2 text-primary">
                                         <h3 className="text-xl font-bold">{cert.name}</h3>
                                     </div>
-                                    <p className="text-sharp font-semibold text-sm mb-3 flex items-center gap-2">
+                                    <p className="text-secondary font-semibold text-sm mb-3 flex items-center gap-2">
                                         <CheckCircle2 size={14} /> Issued by {cert.issuer}
                                     </p>
                                     <p className="text-text-muted leading-relaxed">
