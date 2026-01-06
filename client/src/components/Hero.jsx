@@ -36,7 +36,7 @@ const Hero = () => {
                         >
                             <div className="mb-10 text-secondary font-mono text-base tracking-[0.4em] uppercase opacity-80">Specializing In</div>
                             <ul className="space-y-6">
-                                {['Distributed Systems', 'Embedded', 'AI/ML', 'Full-Stack', 'Infra & Ops'].map((skill, index) => (
+                                {['AI/ML', 'Distributed Systems', 'Real-Time Embedded', 'Full-Stack', 'Infra & Ops'].map((skill, index) => (
                                     <motion.li
                                         key={skill}
                                         initial={{ opacity: 0, x: -20 }}
