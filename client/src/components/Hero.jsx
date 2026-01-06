@@ -36,7 +36,7 @@ const Hero = () => {
                         >
                             <div className="mb-10 text-secondary font-mono text-base tracking-[0.4em] uppercase opacity-80">Specializing In</div>
                             <ul className="space-y-6">
-                                {['AI/ML', 'Distributed Systems', 'Real-Time Embedded', 'Full-Stack', 'Infra & Ops'].map((skill, index) => (
+                                {['AI/ML', 'Data Systems', 'Distributed Systems', 'Full-Stack', 'Infra & Ops', 'Real-Time Embedded'].map((skill, index) => (
                                     <motion.li
                                         key={skill}
                                         initial={{ opacity: 0, x: -20 }}
@@ -66,7 +66,7 @@ const Hero = () => {
                                         <img
                                             src="/profile.png"
                                             alt="Alex Eisenach"
-                                            className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                                            className="w-full h-full object-cover transition-transform duration-700"
                                         />
                                     </div>
                                 </div>

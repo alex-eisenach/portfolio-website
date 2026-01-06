@@ -27,10 +27,10 @@ const About = () => {
                             I'm a software engineer with 11+ years of experience designing and maintaining large-scale distributed systems in high-precision automation environments. My foundation, a BS in Aerospace Engineering and MS in Mechanical Engineering (focused on User-Centered Design), taught me to think in interconnected systems, a skill that's made me exceptionally effective at building robust, performant software at scale.
                         </p>
                         <p className="text-text-muted text-lg mb-8">
-                            Outside work, I build tools for my own needs with professional-grade techniques: a bare-metal AI image generation pipeline to support my wife's business; a cloud-deployed full-stack MERN golf league tracking application; and a Kubernetes-based home network guardian leveraging WireGuard, Pi-hole, and ArgoCD.
+                            Outside work, I build tools for my own needs with professional-grade techniques: a bare-metal AI image generation pipeline to support my wife's business; a cloud-deployed full-stack MERN golf league tracking application; and a Kubernetes-based home network guardian leveraging WireGuard, Pi-hole, and Argo CD.
                         </p>
                         <p className="text-text-muted text-lg mb-8">
-                            Passion for designing solutions and a ethos of continuous learning are hallmarks of who I am as a person.
+                            A passion for designing elegant solutions and an ethos of continuous learning define who I am as an engineer.
                         </p>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 mt-8">
                             <div className="flex flex-col">
@@ -38,16 +38,22 @@ const About = () => {
                                 <span className="text-xs text-text-muted uppercase tracking-wider">Years Experience</span>
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-3xl font-bold text-secondary">MS</span>
+                                <span className="text-3xl font-bold text-primary">4</span>
+                                <span className="text-xs text-text-muted uppercase tracking-wider">Certifications</span>
+                            </div>
+                            <div className="flex flex-col">
+                                <div className="flex items-center gap-2">
+                                    <span className="text-3xl font-bold text-secondary">MS</span>
+                                    <img src="/cu-logo.png" alt="CU Logo" className="h-8 object-contain opacity-80" />
+                                </div>
                                 <span className="text-xs text-text-muted uppercase tracking-wider">Mechanical Engineering</span>
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-3xl font-bold text-bg-darker">BS</span>
+                                <div className="flex items-center gap-2">
+                                    <span className="text-3xl font-bold text-secondary">BS</span>
+                                    <img src="/cu-logo.png" alt="CU Logo" className="h-8 object-contain opacity-80" />
+                                </div>
                                 <span className="text-xs text-text-muted uppercase tracking-wider">Aerospace Engineering</span>
-                            </div>
-                            <div className="flex flex-col">
-                                <span className="text-3xl font-bold text-secondary">4</span>
-                                <span className="text-xs text-text-muted uppercase tracking-wider">Certifications</span>
                             </div>
                         </div>
                     </motion.div>

@@ -61,7 +61,21 @@ const Projects = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-bg-darker to-transparent opacity-60"></div>
                             </div>
                             <div className="p-6">
-                                <h3 className="text-xl text-main font-bold mb-2">{project.title}</h3>
+                                <div className="mb-4">
+                                    <h3 className="text-xl text-main font-bold">{project.title}</h3>
+                                    <div className="flex gap-4 items-center mt-1">
+                                        <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-xs font-bold transition-opacity hover:opacity-80 uppercase tracking-wider">
+                                            <Github size={14} className="text-primary" />
+                                            <span className="gradient-text">Code</span>
+                                        </a>
+                                        {project.id === 1 && (
+                                            <a href="https://bondi-league.onrender.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-xs font-bold transition-opacity hover:opacity-80 uppercase tracking-wider">
+                                                <ExternalLink size={14} className="text-primary" />
+                                                <span className="gradient-text">Website</span>
+                                            </a>
+                                        )}
+                                    </div>
+                                </div>
                                 <p className="text-text-muted text-sm mb-4">
                                     {project.description}
                                 </p>
@@ -71,11 +85,6 @@ const Projects = () => {
                                             {tech}
                                         </span>
                                     ))}
-                                </div>
-                                <div className="flex gap-4">
-                                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-bold text-white hover:text-primary transition-colors">
-                                        <Github size={16} /> Code
-                                    </a>
                                 </div>
                             </div>
                         </motion.div>

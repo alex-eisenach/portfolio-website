@@ -93,16 +93,16 @@ app.get('/api/experience', (req, res) => {
       ],
       responsibilities: [
         'Designed novel embedded algorithms in C++ and Python for servo control, DSP, and embedded measurement to enable bleeding-edge products',
-        'Deployed new processes and data acquisition schemes to improve mass production, both embedded and externally in web applications',
+        'Deployed new processes and data acquisition schemes to meet mass production requirements for new drive technologies',
         'Created fullstack data systems tooling to characterize production performance, change impact, and process control',
         'Wrote device drivers for 3rd party equipment and created low-level interfaces and configuration of embedded FPGA and ASIC hardware',
         'Planned, communicated, and orchestrated the testing, qualification and deployment of new software releases to mass production'
       ],
       projects: [
         'Sole design and delivery of a next-gen large-scale distributed manufacturing execution system to facilitate automation/production monitoring',
-        'Co-led and deployed a five-year ground-up refactoring of legacy process code into modern Python/C++ OOP architecture with full DevOps integration',
-        'Developed a convolutional neural network to classify measured disk flaw signatures in 2-D image data using Keras+TensorFlow in Python',
-        'Design and overseas vendor deployment of functional test equipment to support internal hardware projects, such as temperature control systems and PCB testers'
+        'Vectorized core embedded pattern quality algorithms to achieve over 70% reduction in processing time, boosting overall throughput by an average of ~20%',
+        'Co-led and delivered a five-year ground-up refactoring of legacy process code into modern Python/C++ OOP architecture with full DevOps integration',
+        'Developed a convolutional neural network to classify measured disk flaw signatures in 2-D image data using Keras+TensorFlow in Python'
       ]
     }
   ]);
