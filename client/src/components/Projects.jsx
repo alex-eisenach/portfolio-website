@@ -67,7 +67,7 @@ const Projects = () => {
                                 </p>
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {project.technologies.map(tech => (
-                                        <span key={tech} className="px-3 py-1 bg-white/5 rounded-full text-[10px] font-semibold tracking-wider uppercase text-sharp gradient-border">
+                                        <span key={tech} className="px-4 py-1.5 bg-white/5 rounded-full text-[10px] font-semibold tracking-wider uppercase text-sharp gradient-border">
                                             {tech}
                                         </span>
                                     ))}

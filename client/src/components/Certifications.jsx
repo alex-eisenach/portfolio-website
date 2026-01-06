@@ -56,11 +56,11 @@ const Certifications = () => {
                                         }}
                                     />
                                 </div>
-                                <div className="text-center md:text-left">
+                                <div className="w-full">
                                     <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2 text-primary">
                                         <h3 className="text-xl font-bold">{cert.name}</h3>
                                     </div>
-                                    <p className="text-secondary font-semibold text-sm mb-3 flex items-center justify-center md:justify-start gap-2">
+                                    <p className="text-secondary font-semibold text-sm mb-3 flex items-center gap-2">
                                         <CheckCircle2 size={14} /> Issued by {cert.issuer}
                                     </p>
                                     <p className="text-text-muted leading-relaxed">
