@@ -62,12 +62,12 @@ const Projects = () => {
                             </div>
                             <div className="p-6">
                                 <h3 className="text-xl text-main font-bold mb-2">{project.title}</h3>
-                                <p className="text-text-muted text-sm mb-4 line-clamp-3">
+                                <p className="text-text-muted text-sm mb-4">
                                     {project.description}
                                 </p>
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {project.technologies.map(tech => (
-                                        <span key={tech} className="px-4 py-1.5 bg-white/5 rounded-full text-[10px] font-semibold tracking-wider uppercase text-sharp border border-primary/10 whitespace-nowrap">
+                                        <span key={tech} className="px-4 py-1.5 bg-white/5 rounded-full text-[10px] font-semibold tracking-wider uppercase text-sharp gradient-border whitespace-nowrap">
                                             {tech}
                                         </span>
                                     ))}

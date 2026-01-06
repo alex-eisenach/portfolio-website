@@ -9,7 +9,7 @@ const About = () => {
         { name: 'Backend', icon: <Terminal />, list: ['Node.js', 'Express.js', 'MSSQL', 'PostgreSQL', 'MongoDB', 'NGINX'] },
         { name: 'Data', icon: <Database />, list: ['JMP', 'Spark', 'NumPy', 'Pandas', 'Polars', 'RAPIDS'] },
         { name: 'AI/ML', icon: <Brain />, list: ['RAG', 'Stable Diffusion', 'Llama', 'PyTorch', 'TensorFlow', 'HuggingFace'] },
-        { name: 'DevOps', icon: <Cpu />, list: ['Git', 'GitHub Actions', 'Docker', 'Argo CD', 'K3s'] },
+        { name: 'DevOps', icon: <Cpu />, list: ['Git', 'GitHub Actions', 'Docker', 'Argo CD', 'Kubernetes'] },
     ];
 
     return (
@@ -24,10 +24,13 @@ const About = () => {
                     >
                         <h2 className="text-4xl font-bold mb-6 font-heading">About Me</h2>
                         <p className="text-text-muted text-lg mb-6">
-                            I'm a software engineer with over 11 years of experience designing and maintaining large-scale distributed systems in high-precision automation environments. My foundation, a BS in Aerospace Engineering and MS in Mechanical Engineering (focused on User-Centered Design), taught me to think in interconnected systems, a skill that's made me exceptionally effective at building resilient, high-performance software.
+                            I'm a software engineer with 11+ years of experience designing and maintaining large-scale distributed systems in high-precision automation environments. My foundation, a BS in Aerospace Engineering and MS in Mechanical Engineering (focused on User-Centered Design), taught me to think in interconnected systems, a skill that's made me exceptionally effective at building robust, performant software at scale.
                         </p>
                         <p className="text-text-muted text-lg mb-8">
-                            Outside work, I build tools that solve personal challenges with professional-grade techniques: a locally-run AI image generation pipeline (MonAtelier) optimized for speed on consumer hardware using PyTorch and custom LoRAs; a full-stack MERN application (Golf League Tracker) with cloud deployment; and a Kubernetes-based home network stack (Domovoi) featuring WireGuard, Pi-hole, and ArgoCD. These projects reflect my drive to explore AI, full-stack development, and infrastructure while applying the same discipline I use in mission-critical production systems.
+                            Outside work, I build tools for my own needs with professional-grade techniques: a bare-metal AI image generation pipeline to support my wife's business; a cloud-deployed full-stack MERN golf league tracking application; and a Kubernetes-based home network guardian leveraging WireGuard, Pi-hole, and ArgoCD.
+                        </p>
+                        <p className="text-text-muted text-lg mb-8">
+                            Passion for designing solutions and a ethos of continuous learning are hallmarks of who I am as a person.
                         </p>
                         <div className="flex gap-4">
                             <div className="flex flex-col">

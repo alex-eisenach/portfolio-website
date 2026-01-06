@@ -128,8 +128,20 @@ section::after {
   gap: 2rem;
 }
 
+.gap-12 {
+  gap: 3rem;
+}
+
 .gap-16 {
   gap: 4rem;
+}
+
+.gap-24 {
+  gap: 6rem;
+}
+
+.gap-32 {
+  gap: 8rem;
 }
 
 .shrink-0 {
@@ -313,6 +325,31 @@ section::after {
 
 .gradient-bg {
   background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+.border-gradient {
+  border: 1.5px solid transparent;
+  background: linear-gradient(var(--bg-darker), var(--bg-darker)) padding-box,
+    linear-gradient(135deg, var(--primary), var(--secondary), var(--accent)) border-box;
+}
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  /* border thickness */
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 /* Sizing & Spacing */
@@ -532,11 +569,19 @@ section::after {
 }
 
 .space-y-4> :not([hidden])~ :not([hidden]) {
+  margin-top: 1rem;
+}
+
+.space-y-6> :not([hidden])~ :not([hidden]) {
   margin-top: 1.5rem;
 }
 
 .space-y-8> :not([hidden])~ :not([hidden]) {
   margin-top: 2rem;
+}
+
+.space-y-10> :not([hidden])~ :not([hidden]) {
+  margin-top: 2.5rem;
 }
 
 .space-y-12> :not([hidden])~ :not([hidden]) {

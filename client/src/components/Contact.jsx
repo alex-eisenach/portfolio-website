@@ -12,7 +12,7 @@ const Contact = () => {
                         <div>
                             <h2 className="text-4xl font-bold mb-6 font-heading">Get In Touch</h2>
                             <p className="text-text-muted text-lg mb-10">
-                                I'm currently looking for a new opportunity. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                                I'm currently looking for a new opportunity. Whether you have a question or just want to say hi, I'd love to hear from you!
                             </p>
 
                             <div className="space-y-6">

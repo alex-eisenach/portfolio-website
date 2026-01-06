@@ -41,7 +41,7 @@ app.get('/api/projects', (req, res) => {
     {
       id: 3,
       title: 'HCI Graffiti',
-      description: 'Android JAVA app for augmented reality graffiti creation and geo-tagging.',
+      description: 'Android Java app for augmented reality graffiti creation and geo-tagging.',
       technologies: ['Java', 'Android', 'OpenCV', 'Augmented Reality'],
       link: 'https://github.com/alex-eisenach/hci-graffiti'
     }
@@ -52,12 +52,12 @@ app.get('/api/projects', (req, res) => {
 app.get('/api/certifications', (req, res) => {
   res.json([
     {
-      id: 3,
-      name: 'Certified Professional: Accelerated Data Science',
+      id: 1,
+      name: 'Certified Professional: Agentic AI',
       issuer: 'NVIDIA',
       date: '2025',
-      image: '/certifications/prof_ads.png',
-      description: 'Awarded for proficiency in accelerating data science workflows using NVIDIA GPUs.'
+      image: '/certifications/prof_aai.png',
+      description: 'Awarded for demonstrated professional-level competency indesigning, building, evaluating, and operating agentic systems.'
     },
     {
       id: 2,
@@ -68,13 +68,13 @@ app.get('/api/certifications', (req, res) => {
       description: 'Awarded for demonstrated professional-level ability to monitor, troubleshoot, and optimize AI infrastructure by NVIDIA. '
     },
     {
-      id: 1,
-      name: 'Certified Professional: Agentic AI',
+      id: 3,
+      name: 'Certified Professional: Accelerated Data Science',
       issuer: 'NVIDIA',
       date: '2025',
-      image: '/certifications/prof_aai.png',
-      description: 'Awarded for demonstrated professional-level competency indesigning, building, evaluating, and operating agentic systems.'
-    },
+      image: '/certifications/prof_ads.png',
+      description: 'Awarded for proficiency in accelerating data science workflows using NVIDIA GPUs.'
+    }
   ]);
 });
 
