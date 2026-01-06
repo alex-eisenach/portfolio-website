@@ -32,17 +32,15 @@ const About = () => {
                         <p className="text-text-muted text-lg mb-8">
                             Passion for designing solutions and a ethos of continuous learning are hallmarks of who I am as a person.
                         </p>
-                        <div className="flex gap-4">
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4 mt-8">
                             <div className="flex flex-col">
                                 <span className="text-3xl font-bold text-primary">11+</span>
                                 <span className="text-xs text-text-muted uppercase tracking-wider">Years Experience</span>
                             </div>
-                            <div className="h-12 w-px bg-white/10 mx-4"></div>
                             <div className="flex flex-col">
                                 <span className="text-3xl font-bold text-secondary">MS</span>
                                 <span className="text-xs text-text-muted uppercase tracking-wider">Mechanical Engineering</span>
                             </div>
-                            <div className="h-12 w-px bg-white/10 mx-4"></div>
                             <div className="flex flex-col">
                                 <span className="text-3xl font-bold text-bg-darker">BS</span>
                                 <span className="text-xs text-text-muted uppercase tracking-wider">Aerospace Engineering</span>
@@ -54,7 +52,7 @@ const About = () => {
                         </div>
                     </motion.div>
 
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {skills.map((skill, index) => (
                             <motion.div
                                 key={skill.name}

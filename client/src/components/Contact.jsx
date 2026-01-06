@@ -16,23 +16,23 @@ const Contact = () => {
                             </p>
 
                             <div className="space-y-6">
-                                <a href="mailto:alex.eisenach303@gmail.com" className="flex items-center gap-4 text-text-muted hover:text-primary transition-colors group">
-                                    <div className="p-3 bg-white/5 rounded-xl group-hover:scale-110 transition-transform">
+                                <a href="mailto:alex.eisenach303@gmail.com" className="flex items-center gap-4 text-text-muted hover:text-primary transition-colors group min-w-0">
+                                    <div className="p-3 bg-white/5 rounded-xl group-hover:scale-110 transition-transform shrink-0">
                                         <Mail />
                                     </div>
-                                    <span className="font-medium">alex.eisenach303@gmail.com</span>
+                                    <span className="font-medium truncate block">alex.eisenach303@gmail.com</span>
                                 </a>
-                                <a href="https://www.linkedin.com/in/alex-eisenach-08a581224" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-text-muted hover:text-primary transition-colors group">
-                                    <div className="p-3 bg-white/5 rounded-xl group-hover:scale-110 transition-transform">
+                                <a href="https://www.linkedin.com/in/alex-eisenach-08a581224" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-text-muted hover:text-primary transition-colors group min-w-0">
+                                    <div className="p-3 bg-white/5 rounded-xl group-hover:scale-110 transition-transform shrink-0">
                                         <Linkedin />
                                     </div>
-                                    <span className="font-medium">linkedin.com/in/alex-eisenach</span>
+                                    <span className="font-medium truncate block">linkedin.com/in/alex-eisenach</span>
                                 </a>
-                                <a href="https://github.com/alex-eisenach" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-text-muted hover:text-primary transition-colors group">
-                                    <div className="p-3 bg-white/5 rounded-xl group-hover:scale-110 transition-transform">
+                                <a href="https://github.com/alex-eisenach" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-text-muted hover:text-primary transition-colors group min-w-0">
+                                    <div className="p-3 bg-white/5 rounded-xl group-hover:scale-110 transition-transform shrink-0">
                                         <Github />
                                     </div>
-                                    <span className="font-medium">github.com/alex-eisenach</span>
+                                    <span className="font-medium truncate block">github.com/alex-eisenach</span>
                                 </a>
                             </div>
                         </div>

@@ -72,8 +72,14 @@ h4 {
 
 section {
   position: relative;
-  padding: 120px 0;
+  padding: 100px 0;
   background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
 }
 
 section::after {
@@ -140,6 +146,20 @@ section::after {
   gap: 6rem;
 }
 
+@media (max-width: 768px) {
+  .gap-24 {
+    gap: 2rem;
+  }
+
+  .gap-32 {
+    gap: 3rem;
+  }
+
+  .gap-16 {
+    gap: 2rem;
+  }
+}
+
 .gap-32 {
   gap: 8rem;
 }
@@ -167,7 +187,7 @@ section::after {
   }
 
   .container {
-    padding: 0 1.5rem;
+    padding: 0 1.25rem;
   }
 
   .hidden {
@@ -175,11 +195,19 @@ section::after {
   }
 
   .text-5xl {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+
+  .text-4xl {
+    font-size: 2rem;
   }
 
   .text-8xl {
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+
+  .text-7xl {
+    font-size: 3rem;
   }
 
   .flex-col-sm {
@@ -598,6 +626,20 @@ section::after {
 
 .space-y-32> :not([hidden])~ :not([hidden]) {
   margin-top: 8rem;
+}
+
+@media (max-width: 768px) {
+  .space-y-24> :not([hidden])~ :not([hidden]) {
+    margin-top: 3rem;
+  }
+
+  .space-y-32> :not([hidden])~ :not([hidden]) {
+    margin-top: 4rem;
+  }
+
+  .space-y-16> :not([hidden])~ :not([hidden]) {
+    margin-top: 2rem;
+  }
 }
 
 /* Text */

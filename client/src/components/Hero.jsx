@@ -42,9 +42,9 @@ const Hero = () => {
                                         initial={{ opacity: 0, x: -20 }}
                                         animate={{ opacity: 1, x: 0 }}
                                         transition={{ delay: index * 0.1 + 0.6 }}
-                                        className="flex items-center gap-6 text-3xl md:text-5xl lg:text-7xl font-black tracking-tighter group cursor-default"
+                                        className="flex items-center gap-4 md:gap-6 text-2xl md:text-5xl lg:text-7xl font-black tracking-tighter group cursor-default"
                                     >
-                                        <div className="h-2 w-12 md:w-16 bg-gradient-to-r from-primary to-secondary rounded-full opacity-40 group-hover:w-24 group-hover:opacity-100 transition-all duration-500" />
+                                        <div className="h-2 w-8 md:w-16 bg-gradient-to-r from-primary to-secondary rounded-full opacity-40 group-hover:w-24 group-hover:opacity-100 transition-all duration-500" />
                                         <span className="gradient-text leading-none">{skill}</span>
                                     </motion.li>
                                 ))}
@@ -79,16 +79,16 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
-                        className="flex items-center justify-center gap-24 mt-8 pb-16"
+                        className="flex items-center justify-center gap-8 md:gap-24 mt-8 pb-16"
                     >
                         <a href="https://github.com/alex-eisenach" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-primary transition-all hover:scale-110">
-                            <Github size={48} />
+                            <Github className="w-8 h-8 md:w-12 md:h-12" />
                         </a>
                         <a href="https://www.linkedin.com/in/alex-eisenach-08a581224" target="_blank" rel="noopener noreferrer" className="text-text-muted hover:text-secondary transition-all hover:scale-110">
-                            <Linkedin size={48} />
+                            <Linkedin className="w-8 h-8 md:w-12 md:h-12" />
                         </a>
                         <a href="mailto:alex.eisenach303@gmail.com" className="text-text-muted hover:text-accent transition-all hover:scale-110">
-                            <Mail size={48} />
+                            <Mail className="w-8 h-8 md:w-12 md:h-12" />
                         </a>
                     </motion.div>
                 </div>
