@@ -20,29 +20,29 @@ app.get('/api/projects', (req, res) => {
     {
       id: 4,
       title: 'MonAtelier',
-      description: 'AI creative engine for bespoke art generation using Stable Diffusion 3.5. Optimized for local execution with sophisticated memory management.',
-      technologies: ['Python', 'PyTorch', 'Hugging Face', 'Stable Diffusion', 'ComfyUI'],
+      description: 'Local engine for uniquely-styled art generation for my wife\'s color book business. Optimized to run on consumer hardware and customized with LoRA training.',
+      technologies: ['PyTorch', 'HuggingFace', 'Stable Diffusion', 'TensorRT', 'ComfyUI'],
       link: 'https://github.com/alex-eisenach/mon-atelier'
     },
     {
       id: 1,
       title: 'Bondi League',
-      description: 'A full-stack golf league score-tracking application featuring complex data visualization and real-time updates.',
+      description: 'A full-stack golf league score-tracking application featuring bespoke data visualization and real-time updates.',
       technologies: ['React.js', 'Node.js', 'MongoDB', 'D3.js', 'Observable Plot'],
       link: 'https://github.com/alex-eisenach/bondi-league-frontend'
     },
     {
       id: 2,
       title: 'Domovoi',
-      description: 'Home network automation "Butler" system using Shell scripting and Argo CD for infrastructure management.',
-      technologies: ['Shell', 'Argo CD', 'Linux', 'Automation'],
+      description: 'Home network ad-blocker and VPN server built on Pi-Hole & WireGuard. CI through Argo CD + K3s. Metrology through Prometheus + Grafana.',
+      technologies: ['Pi-Hole', 'WireGuard', 'Argo CD', 'K3s', 'Prometheus', 'Grafana'],
       link: 'https://github.com/alex-eisenach/domovoi'
     },
     {
       id: 3,
       title: 'HCI Graffiti',
-      description: 'Java-based project developed for Human-Computer Interaction studies, focusing on intuitive user interfaces.',
-      technologies: ['Java', 'Swing', 'HCI Principles'],
+      description: 'Android JAVA app for augmented reality graffiti creation and geo-tagging.',
+      technologies: ['Java', 'Android', 'OpenCV', 'Augmented Reality'],
       link: 'https://github.com/alex-eisenach/hci-graffiti'
     }
   ]);
@@ -52,8 +52,8 @@ app.get('/api/projects', (req, res) => {
 app.get('/api/certifications', (req, res) => {
   res.json([
     {
-      id: 1,
-      name: 'NVIDIA-Certified Professional: Accelerated Data Science',
+      id: 3,
+      name: 'Certified Professional: Accelerated Data Science',
       issuer: 'NVIDIA',
       date: '2025',
       image: '/certifications/prof_ads.png',
@@ -61,19 +61,19 @@ app.get('/api/certifications', (req, res) => {
     },
     {
       id: 2,
-      name: 'NVIDIA-Certified Professional: Generative AI LLMs',
+      name: 'Certified Professional: Generative AI LLMs',
       issuer: 'NVIDIA',
       date: '2025',
       image: '/certifications/prof_genai.png',
       description: 'Awarded for demonstrated professional-level ability to monitor, troubleshoot, and optimize AI infrastructure by NVIDIA. '
     },
     {
-      id: 3,
-      name: 'NVIDIA-Certified Associate: Generative AI LLMs',
+      id: 1,
+      name: 'Certified Professional: Agentic AI',
       issuer: 'NVIDIA',
       date: '2025',
-      image: '/certifications/assoc_genai.png',
-      description: 'Awarded for demonstrated foundational concepts for developing, integrating, and maintaining AI-driven applications using generative AI and large language models (LLMs) with NVIDIA solutions.'
+      image: '/certifications/prof_aai.png',
+      description: 'Awarded for demonstrated professional-level competency indesigning, building, evaluating, and operating agentic systems.'
     },
   ]);
 });

@@ -49,7 +49,7 @@ const Certifications = () => {
                                     <img
                                         src={cert.image}
                                         alt={cert.name}
-                                        className="w-20 h-20 object-contain"
+                                        className="w-40 h-20 object-contain"
                                         style={{
                                             clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)',
                                             WebkitClipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'
@@ -57,10 +57,10 @@ const Certifications = () => {
                                     />
                                 </div>
                                 <div>
-                                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+                                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2 text-primary">
                                         <h3 className="text-xl font-bold">{cert.name}</h3>
                                     </div>
-                                    <p className="text-primary font-semibold text-sm mb-3 flex items-center gap-2">
+                                    <p className="text-sharp font-semibold text-sm mb-3 flex items-center gap-2">
                                         <CheckCircle2 size={14} /> Issued by {cert.issuer}
                                     </p>
                                     <p className="text-text-muted leading-relaxed">

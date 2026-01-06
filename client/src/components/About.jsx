@@ -24,7 +24,7 @@ const About = () => {
                     >
                         <h2 className="text-4xl font-bold mb-6 font-heading">About Me</h2>
                         <p className="text-text-muted text-lg mb-6">
-                            I'm a software engineer with over 11 years of experience designing and maintaining large-scale distributed systems in high-precision automation environments. My foundation—a BS in Aerospace Engineering and MS in Mechanical Engineering (focused on User-Centered Design)—taught me to think in interconnected systems, a skill that's made me exceptionally effective at building resilient, high-performance software.
+                            I'm a software engineer with over 11 years of experience designing and maintaining large-scale distributed systems in high-precision automation environments. My foundation, a BS in Aerospace Engineering and MS in Mechanical Engineering (focused on User-Centered Design), taught me to think in interconnected systems, a skill that's made me exceptionally effective at building resilient, high-performance software.
                         </p>
                         <p className="text-text-muted text-lg mb-8">
                             Outside work, I build tools that solve personal challenges with professional-grade techniques: a locally-run AI image generation pipeline (MonAtelier) optimized for speed on consumer hardware using PyTorch and custom LoRAs; a full-stack MERN application (Golf League Tracker) with cloud deployment; and a Kubernetes-based home network stack (Domovoi) featuring WireGuard, Pi-hole, and ArgoCD. These projects reflect my drive to explore AI, full-stack development, and infrastructure while applying the same discipline I use in mission-critical production systems.
@@ -41,11 +41,11 @@ const About = () => {
                             </div>
                             <div className="h-12 w-px bg-white/10 mx-4"></div>
                             <div className="flex flex-col">
-                                <span className="text-3xl font-bold text-accent">BS</span>
+                                <span className="text-3xl font-bold text-bg-darker">BS</span>
                                 <span className="text-xs text-text-muted uppercase tracking-wider">Aerospace Engineering</span>
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-3xl font-bold text-accent">3+</span>
+                                <span className="text-3xl font-bold text-secondary">3+</span>
                                 <span className="text-xs text-text-muted uppercase tracking-wider">Certifications</span>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ const About = () => {
                                 className="glass pt-7 px-7 pb-10 group hover:border-primary/50 transition-colors"
                             >
                                 <div className="flex items-center justify-start gap-3 mb-3">
-                                    <div className="text-primary group-hover:scale-110 transition-transform flex items-center justify-center">
+                                    <div className="text-secondary group-hover:scale-110 transition-transform flex items-center justify-center">
                                         {React.cloneElement(skill.icon, { size: 20 })}
                                     </div>
                                     <h3 className="font-bold text-primary uppercase tracking-wider" style={{ fontSize: '1.05rem' }}>{skill.name}</h3>

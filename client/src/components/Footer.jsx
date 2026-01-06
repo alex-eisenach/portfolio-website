@@ -21,10 +21,6 @@ const Footer = () => {
                         <Mail size={20} />
                     </a>
                 </div>
-
-                <div className="text-text-muted text-sm flex items-center gap-2">
-                    Made by <Heart size={14} className="text-red-500 fill-red-500" /> Alex Eisenach
-                </div>
             </div>
         </footer>
     );

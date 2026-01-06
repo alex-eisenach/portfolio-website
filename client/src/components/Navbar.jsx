@@ -28,7 +28,7 @@ const Navbar = () => {
                     <div className="p-2 gradient-bg rounded-lg group-hover:scale-110 transition-transform">
                         <Code2 size={24} color="white" />
                     </div>
-                    <span className="text-xl font-bold font-heading tracking-tight">Alex Eisenach</span>
+                    <span className="text-xl font-bold font-heading tracking-tight text-white">Alex Eisenach</span>
                 </a>
 
                 {/* Desktop Menu */}

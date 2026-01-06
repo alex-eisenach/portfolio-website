@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
 
 :root {
-  --primary: #6366f1;
-  --primary-rgb: 99, 102, 241;
-  --secondary: #06b6d4;
-  --secondary-rgb: 6, 182, 212;
-  --accent: #a855f7;
-  --accent-rgb: 168, 85, 247;
-  --bg-darker: #020617;
-  --bg-dark: #0f172a;
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --border-glass: rgba(255, 255, 255, 0.1);
-  --bg-glass: rgba(30, 41, 59, 0.4);
+  --primary: #E96353;
+  --primary-rgb: 233, 99, 83;
+  --secondary: #5995A4;
+  --secondary-rgb: 89, 149, 164;
+  --accent: #ea4b36;
+  --accent-rgb: 252, 176, 128;
+  --bg-darker: #1D437E;
+  --bg-dark: #d5fc8035;
+  --text-main: #df5d4c;
+  --text-muted: #f8fafc;
+  --text-sharp: #1D437E;
+  --border-glass: rgba(255, 255, 255, 0.05);
+  --bg-glass: rgba(30, 41, 59, 0.1);
 }
 
 * {
@@ -24,7 +25,7 @@
 body {
   background-color: var(--bg-darker);
   color: var(--text-main);
-  font-family: 'Inter', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   line-height: 1.5;
   overflow-x: hidden;
 }
@@ -33,7 +34,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'JetBrains Mono', monospace;
+  letter-spacing: -0.05em;
 }
 
 /* Layout Core */
@@ -47,6 +49,18 @@ h4 {
 section {
   position: relative;
   padding: 120px 0;
+  background-attachment: fixed;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: linear-gradient(to bottom, transparent, rgba(var(--primary-rgb), 0.03));
+  pointer-events: none;
 }
 
 /* Flexbox utilities */
@@ -56,6 +70,10 @@ section {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -149,6 +167,30 @@ section {
   .md\:hidden {
     display: none;
   }
+
+  .md\:flex-row {
+    flex-direction: row !important;
+  }
+
+  .md\:gap-16 {
+    gap: 4rem;
+  }
+
+  .md\:w-48 {
+    width: 12rem;
+  }
+
+  .md\:w-96 {
+    width: 24rem;
+  }
+
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+
+  .text-6xl {
+    font-size: 3.75rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -158,6 +200,10 @@ section {
 }
 
 @media (min-width: 1024px) {
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -169,6 +215,35 @@ section {
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
+
+  .lg\:gap-24 {
+    gap: 6rem;
+  }
+
+  .lg\:w-56 {
+    width: 14rem;
+  }
+
+  .lg\:w-112 {
+    width: 28rem;
+  }
+
+  .lg\:gap-32 {
+    gap: 8rem;
+  }
+
+  .text-4xl {
+    font-size: 2.25rem;
+  }
+
+  .text-7xl {
+    font-size: 4.5rem;
+  }
+}
+
+.mask-edge-fade {
+  mask-image: radial-gradient(circle at center, black 40%, transparent 77%);
+  -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 77%);
 }
 
 /* Common Components */
@@ -181,7 +256,7 @@ section {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #818cf8, #34d399, #c084fc);
+  background: linear-gradient(135deg, #e64934, #5995a4, #5bafa8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -216,8 +291,44 @@ section {
   height: 20rem;
 }
 
+.h-48 {
+  height: 18rem;
+}
+
 .w-20 {
   width: 5rem;
+}
+
+.w-40 {
+  width: 10rem;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
+.w-64 {
+  width: 16rem;
+}
+
+.w-72 {
+  width: 18rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-112 {
+  width: 28rem;
+}
+
+.w-128 {
+  width: 32rem;
 }
 
 .h-1\.5 {
@@ -345,6 +456,18 @@ section {
   margin-bottom: 4rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -379,6 +502,10 @@ section {
   margin-top: 6rem;
 }
 
+.space-y-32> :not([hidden])~ :not([hidden]) {
+  margin-top: 8rem;
+}
+
 /* Text */
 .text-xs {
   font-size: 0.75rem;
@@ -410,6 +537,14 @@ section {
 
 .text-8xl {
   font-size: 6rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
 }
 
 .font-medium {
@@ -450,6 +585,10 @@ section {
 
 .text-text-muted {
   color: var(--text-muted);
+}
+
+.text-sharp {
+  color: var(--text-sharp);
 }
 
 .uppercase {
@@ -506,7 +645,7 @@ section {
 }
 
 .bg-bg-dark {
-  background-color: var(--bg-dark);
+  background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-dark) 10%, var(--bg-dark) 90%, var(--bg-darker) 100%);
 }
 
 .bg-bg-darker {
@@ -589,6 +728,10 @@ section {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
 }
 
 /* Transitions & Transforms */

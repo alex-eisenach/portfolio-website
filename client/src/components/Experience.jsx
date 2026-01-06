@@ -63,16 +63,16 @@ const Experience = () => {
                             <div className="space-y-24">
                                 {/* Leadership & Impact */}
                                 <div>
-                                    <div className="flex items-center gap-2 mb-8 text-primary uppercase tracking-widest font-black text-xs">
+                                    <div className="flex items-center gap-2 mb-8 text-primary uppercase tracking-widest font-black text-s">
                                         <Star size={14} /> Leadership & Impact
                                     </div>
                                     <ul className="space-y-4">
                                         {job.leadership.map((lead, i) => (
                                             <li key={i} className="flex items-start gap-4 group/lead bg-white/[0.03] p-4 rounded-xl border border-white/5 hover:border-primary/20 transition-all hover:bg-white/5">
                                                 <div className="mt-1 text-primary shrink-0 group-hover/lead:scale-110 transition-transform">
-                                                    <Star size={18} fill="currentColor" fillOpacity="0.2" />
+                                                    <ChevronRight size={18} fill="currentColor" fillOpacity="0.2" />
                                                 </div>
-                                                <p className="text-text-muted leading-relaxed italic">"{lead}"</p>
+                                                <p className="text-text-muted leading-relaxed italic">{lead}</p>
                                             </li>
                                         ))}
                                     </ul>
@@ -80,7 +80,7 @@ const Experience = () => {
 
                                 {/* Core Responsibilities */}
                                 <div>
-                                    <div className="flex items-center gap-2 mb-8 text-secondary uppercase tracking-widest font-black text-xs">
+                                    <div className="flex items-center gap-2 mb-8 text-secondary uppercase tracking-widest font-black text-s">
                                         <Settings size={14} /> Core Responsibilities
                                     </div>
                                     <ul className="space-y-4">
@@ -97,7 +97,7 @@ const Experience = () => {
 
                                 {/* Delivered Projects */}
                                 <div>
-                                    <div className="flex items-center gap-2 mb-8 text-accent uppercase tracking-widest font-black text-xs">
+                                    <div className="flex items-center gap-2 mb-8 text-accent uppercase tracking-widest font-black text-s">
                                         <Rocket size={14} /> Delivered Projects
                                     </div>
                                     <div className="grid sm:grid-cols-2 gap-4">
