@@ -805,7 +805,11 @@ section::after {
 }
 
 .bg-bg-dark {
-  background: linear-gradient(180deg, var(--bg-darker) 0%, var(--bg-dark) 10%, var(--bg-dark) 90%, var(--bg-darker) 100%);
+  background: linear-gradient(180deg,
+      var(--bg-darker) 0%,
+      var(--bg-dark) 300px,
+      var(--bg-dark) calc(100% - 300px),
+      var(--bg-darker) 100%);
 }
 
 .bg-bg-darker {

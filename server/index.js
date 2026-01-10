@@ -101,8 +101,10 @@ app.get('/api/experience', (req, res) => {
       projects: [
         'Sole design and delivery of a next-gen large-scale distributed manufacturing execution system to facilitate automation/production monitoring',
         'Vectorized core embedded pattern quality algorithms to achieve over 70% reduction in processing time, boosting overall throughput by an average of ~20%',
+        'Developed and mass-production-qualified novel HAMR laser monitoring/control system, achieving over 10x material endurance gains as a key technology roadmap enabler',
         'Co-led and delivered a five-year ground-up refactoring of legacy process code into modern Python/C++ OOP architecture with full DevOps integration',
-        'Developed a convolutional neural network to classify measured disk flaw signatures in 2-D image data using Keras+TensorFlow in Python'
+        'Developed a convolutional neural network to classify measured disk flaw signatures in 2-D image data using Keras+TensorFlow in Python',
+        'Led implementation of StarCoder-based internal coding assistant using TabbyML framework as VSCode extension; demonstrated to Tech Council',
       ]
     }
   ]);
