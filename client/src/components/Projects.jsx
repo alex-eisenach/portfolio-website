@@ -35,7 +35,7 @@ const Projects = () => {
     if (loading) return <div className="text-center py-20">Loading Projects...</div>;
 
     return (
-        <section id="projects" className="bg-bg-dark">
+        <section id="projects">
             <div className="container">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4 font-heading">Independent Projects</h2>

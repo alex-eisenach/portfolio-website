@@ -21,7 +21,7 @@ const Experience = () => {
         fetchExperience();
     }, []);
 
-    if (loading) return null;
+    if (loading) return <div className="text-center py-20 text-text-muted">Loading Experience...</div>;
 
     return (
         <section id="experience">

@@ -23,7 +23,7 @@ const Certifications = () => {
 
     return (
         <section id="certifications" className="relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full blur-[100px]" />
+
 
             <div className="container relative z-10">
                 <div className="text-center mb-16">

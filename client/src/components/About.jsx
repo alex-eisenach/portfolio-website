@@ -13,7 +13,7 @@ const About = () => {
     ];
 
     return (
-        <section id="about" className="bg-bg-dark">
+        <section id="about">
             <div className="container">
                 <div className="grid md:grid-cols-2 gap-16 items-center">
                     <motion.div
